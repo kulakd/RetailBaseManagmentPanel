@@ -72,6 +72,12 @@
     <Compile Include="User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserModule.Designer.cs">
+      <DependentUpon>UserModule.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CustomerButton.resx">
       <DependentUpon>CustomerButton.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +99,9 @@
     </Compile>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserModule.resx">
+      <DependentUpon>UserModule.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
