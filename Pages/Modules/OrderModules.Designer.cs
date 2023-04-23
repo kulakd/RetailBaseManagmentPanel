@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.exitlbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -132,6 +132,7 @@
             // 
             // cnametxt
             // 
+            this.cnametxt.Enabled = false;
             this.cnametxt.Location = new System.Drawing.Point(159, 440);
             this.cnametxt.Name = "cnametxt";
             this.cnametxt.Size = new System.Drawing.Size(233, 27);
@@ -149,6 +150,7 @@
             // 
             // cidtxt
             // 
+            this.cidtxt.Enabled = false;
             this.cidtxt.Location = new System.Drawing.Point(159, 407);
             this.cidtxt.Name = "cidtxt";
             this.cidtxt.Size = new System.Drawing.Size(233, 27);
@@ -196,14 +198,14 @@
             // 
             this.dgvCustomer.AllowUserToAddRows = false;
             this.dgvCustomer.BackgroundColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Green;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Green;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvCustomer.ColumnHeadersHeight = 29;
             this.dgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -256,14 +258,14 @@
             // 
             this.dgvProduct.AllowUserToAddRows = false;
             this.dgvProduct.BackgroundColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Green;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Green;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvProduct.ColumnHeadersHeight = 29;
             this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -409,6 +411,7 @@
             // 
             // PIDtxt
             // 
+            this.PIDtxt.Enabled = false;
             this.PIDtxt.Location = new System.Drawing.Point(558, 468);
             this.PIDtxt.Name = "PIDtxt";
             this.PIDtxt.Size = new System.Drawing.Size(112, 27);
@@ -416,6 +419,7 @@
             // 
             // Pricetxt
             // 
+            this.Pricetxt.Enabled = false;
             this.Pricetxt.Location = new System.Drawing.Point(980, 479);
             this.Pricetxt.Name = "Pricetxt";
             this.Pricetxt.Size = new System.Drawing.Size(100, 27);
@@ -423,6 +427,7 @@
             // 
             // TotalTxt
             // 
+            this.TotalTxt.Enabled = false;
             this.TotalTxt.Location = new System.Drawing.Point(980, 538);
             this.TotalTxt.Name = "TotalTxt";
             this.TotalTxt.Size = new System.Drawing.Size(100, 27);
@@ -430,6 +435,7 @@
             // 
             // pnametxt
             // 
+            this.pnametxt.Enabled = false;
             this.pnametxt.Location = new System.Drawing.Point(558, 505);
             this.pnametxt.Name = "pnametxt";
             this.pnametxt.Size = new System.Drawing.Size(112, 27);
@@ -447,7 +453,8 @@
             // 
             // odatetxt
             // 
-            this.odatetxt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.odatetxt.CustomFormat = "dd/MM/yyyy";
+            this.odatetxt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.odatetxt.Location = new System.Drawing.Point(558, 542);
             this.odatetxt.Name = "odatetxt";
             this.odatetxt.Size = new System.Drawing.Size(112, 27);
@@ -476,6 +483,7 @@
             this.Clearbtn.TabIndex = 34;
             this.Clearbtn.Text = "CLEAR";
             this.Clearbtn.UseVisualStyleBackColor = false;
+            this.Clearbtn.Click += new System.EventHandler(this.Clearbtn_Click);
             // 
             // Updatebtn
             // 
@@ -602,11 +610,11 @@
         private System.Windows.Forms.TextBox TotalTxt;
         private System.Windows.Forms.TextBox pnametxt;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker odatetxt;
         private System.Windows.Forms.Label label13;
         public System.Windows.Forms.Button Clearbtn;
         public System.Windows.Forms.Button Updatebtn;
         public System.Windows.Forms.Button Insertbtn;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
+        public System.Windows.Forms.DateTimePicker odatetxt;
     }
 }

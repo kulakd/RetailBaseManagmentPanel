@@ -114,24 +114,44 @@ namespace RetailBaseManagmentPanel.Pages.Modules
                 }
                 if (MessageBox.Show("Are you sure you want to order?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    sqlCommand = new SqlCommand("Insert INTO tbOrder(odate,pid,qty,price,total)VALUES(@odate,@pid,@qty,@price,@total)", con);
+                    sqlCommand = new SqlCommand("Insert INTO tbOrder(odate,pid,cid,qty,price,total)VALUES(@odate,@pid,@cid,@qty,@price,@total)", con);
                     sqlCommand.Parameters.AddWithValue("@odate", odatetxt.Text);
                     sqlCommand.Parameters.AddWithValue("@pid", Convert.ToInt16(PIDtxt.Text));
                     sqlCommand.Parameters.AddWithValue("@cid", Convert.ToInt16(PIDtxt.Text));
-                    sqlCommand.Parameters.AddWithValue("@qty", numericUpDown1.Text);
-                    //sqlCommand.Parameters.AddWithValue("@price", Phonetxt.Text);
-                    //sqlCommand.Parameters.AddWithValue("@total", Phonetxt.Text);
+                    sqlCommand.Parameters.AddWithValue("@qty", Convert.ToInt16(numericUpDown1.Text));
+                    sqlCommand.Parameters.AddWithValue("@price", Convert.ToInt16(Pricetxt.Text));
+                    sqlCommand.Parameters.AddWithValue("@total", Convert.ToInt16(TotalTxt.Text));
+                    
                     con.Open();
                     sqlCommand.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("User has been saved");
-                    //Clear();
+                    Clear();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        public void Clear()
+        {
+            cidtxt.Clear();
+            cnametxt.Clear();
+            PIDtxt.Clear();
+            pnametxt.Clear();
+            Pricetxt.Clear();
+            numericUpDown1.Value = 1;
+            TotalTxt.Clear();
+            odatetxt.Value = DateTime.Now;
+        }
+
+        private void Clearbtn_Click(object sender, EventArgs e)
+        {
+            Clear();
+            Insertbtn.Enabled = true;
+            Updatebtn.Enabled = false;
         }
     }
 }
