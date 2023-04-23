@@ -176,6 +176,7 @@
             this.Ordersbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Ordersbtn.TabIndex = 13;
             this.Ordersbtn.TabStop = false;
+            this.Ordersbtn.Click += new System.EventHandler(this.Ordersbtn_Click);
             // 
             // Customersbtn
             // 
