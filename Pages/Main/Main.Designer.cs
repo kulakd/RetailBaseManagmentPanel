@@ -214,6 +214,7 @@
             this.Productbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Productbtn.TabIndex = 10;
             this.Productbtn.TabStop = false;
+            this.Productbtn.Click += new System.EventHandler(this.Productbtn_Click);
             // 
             // label3
             // 

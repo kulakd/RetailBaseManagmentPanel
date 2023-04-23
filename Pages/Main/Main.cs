@@ -47,5 +47,10 @@ namespace RetailBaseManagmentPanel
         {
             openChildForm(new Category());
         }
+
+        private void Productbtn_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Product());
+        }
     }
 }
