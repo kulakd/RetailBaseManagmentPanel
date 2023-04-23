@@ -37,12 +37,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.Categoriesbtn = new RetailBaseManagmentPanel.CustomerButton();
             this.Ordersbtn = new RetailBaseManagmentPanel.CustomerButton();
             this.Customersbtn = new RetailBaseManagmentPanel.CustomerButton();
             this.Userbtn = new RetailBaseManagmentPanel.CustomerButton();
             this.Productbtn = new RetailBaseManagmentPanel.CustomerButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Mainpanel.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -103,7 +103,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(707, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 15);
+            this.label2.Size = new System.Drawing.Size(106, 18);
             this.label2.TabIndex = 16;
             this.label2.Text = "CUSTOMERS";
             // 
@@ -114,7 +114,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(616, 58);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 15);
+            this.label6.Size = new System.Drawing.Size(73, 18);
             this.label6.TabIndex = 19;
             this.label6.Text = "ORDERS";
             // 
@@ -125,7 +125,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(409, 58);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 15);
+            this.label5.Size = new System.Drawing.Size(60, 18);
             this.label5.TabIndex = 18;
             this.label5.Text = "USERS";
             // 
@@ -136,7 +136,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(495, 58);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 15);
+            this.label4.Size = new System.Drawing.Size(106, 18);
             this.label4.TabIndex = 17;
             this.label4.Text = "CATEGORIES";
             // 
@@ -147,20 +147,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(295, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 15);
+            this.label1.Size = new System.Drawing.Size(84, 18);
             this.label1.TabIndex = 15;
             this.label1.Text = "PRODUCT";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(3, 56);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(222, 17);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Frog Retail Managment Panel";
             // 
             // Categoriesbtn
             // 
@@ -197,6 +186,7 @@
             this.Customersbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Customersbtn.TabIndex = 12;
             this.Customersbtn.TabStop = false;
+            this.Customersbtn.Click += new System.EventHandler(this.Customersbtn_Click);
             // 
             // Userbtn
             // 
@@ -223,6 +213,17 @@
             this.Productbtn.TabIndex = 10;
             this.Productbtn.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(3, 56);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(257, 20);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Frog Retail Managment Panel";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Green;
@@ -236,7 +237,7 @@
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.Mainpanel);
