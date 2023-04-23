@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RetailBaseManagmentPanel.Pages.Main;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,6 +41,11 @@ namespace RetailBaseManagmentPanel
         private void Customersbtn_Click(object sender, EventArgs e)
         {
             openChildForm(new Customer());
+        }
+
+        private void Categoriesbtn_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Category());
         }
     }
 }

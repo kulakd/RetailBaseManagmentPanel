@@ -153,6 +153,7 @@
             // 
             // Categoriesbtn
             // 
+            this.Categoriesbtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Categoriesbtn.Image = ((System.Drawing.Image)(resources.GetObject("Categoriesbtn.Image")));
             this.Categoriesbtn.ImageHover = ((System.Drawing.Image)(resources.GetObject("Categoriesbtn.ImageHover")));
             this.Categoriesbtn.ImageNormal = ((System.Drawing.Image)(resources.GetObject("Categoriesbtn.ImageNormal")));
@@ -162,6 +163,7 @@
             this.Categoriesbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Categoriesbtn.TabIndex = 14;
             this.Categoriesbtn.TabStop = false;
+            this.Categoriesbtn.Click += new System.EventHandler(this.Categoriesbtn_Click);
             // 
             // Ordersbtn
             // 
@@ -243,6 +245,8 @@
             this.Controls.Add(this.Mainpanel);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
             this.Text = "Main";
