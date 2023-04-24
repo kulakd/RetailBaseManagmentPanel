@@ -80,8 +80,11 @@ namespace RetailBaseManagmentPanel.Pages.Modules
                 numericUpDown1.Value = numericUpDown1.Value - 1;
                 return;
             }
-            int total = Convert.ToInt16(Pricetxt.Text) * Convert.ToInt16(numericUpDown1.Value);
-            TotalTxt.Text = total.ToString();
+            if (Convert.ToInt16(numericUpDown1.Value) > 0)
+            {
+                int total = Convert.ToInt16(Pricetxt.Text) * Convert.ToInt16(numericUpDown1.Value);
+                TotalTxt.Text = total.ToString();
+            }
         }
 
         private void dgvCustomer_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -114,8 +117,7 @@ namespace RetailBaseManagmentPanel.Pages.Modules
                 }
                 if (MessageBox.Show("Are you sure you want to order?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    sqlCommand = new SqlCommand("Insert INTO tbOrder(odate,pid,cid,qty,price,total)VALUES(@odate,@pid,@cid,@qty,@price,@total)", con);
-                    sqlCommand.Parameters.AddWithValue("@odate", odatetxt.Text);
+                    sqlCommand = new SqlCommand("Insert INTO tbOrder(pid,cid,qty,price,total)VALUES(@pid,@cid,@qty,@price,@total)", con);
                     sqlCommand.Parameters.AddWithValue("@pid", Convert.ToInt16(PIDtxt.Text));
                     sqlCommand.Parameters.AddWithValue("@cid", Convert.ToInt16(PIDtxt.Text));
                     sqlCommand.Parameters.AddWithValue("@qty", Convert.ToInt16(numericUpDown1.Text));
@@ -125,8 +127,16 @@ namespace RetailBaseManagmentPanel.Pages.Modules
                     con.Open();
                     sqlCommand.ExecuteNonQuery();
                     con.Close();
-                    MessageBox.Show("User has been saved");
+                    MessageBox.Show("Order has been added");
+                    
+                    sqlCommand = new SqlCommand("Update tbProduct SET pqty=(pqty-@pqty) WHERE PID LIKE '" + PIDtxt.Text + "'", con);
+                    sqlCommand.Parameters.AddWithValue("@pqty", Convert.ToInt16(numericUpDown1.Text));
+                    con.Open();
+                    sqlCommand.ExecuteNonQuery();
+                    con.Close();
                     Clear();
+                    LoadProduct();
+
                 }
             }
             catch (Exception ex)
@@ -144,14 +154,12 @@ namespace RetailBaseManagmentPanel.Pages.Modules
             Pricetxt.Clear();
             numericUpDown1.Value = 1;
             TotalTxt.Clear();
-            odatetxt.Value = DateTime.Now;
         }
 
         private void Clearbtn_Click(object sender, EventArgs e)
         {
             Clear();
             Insertbtn.Enabled = true;
-            Updatebtn.Enabled = false;
         }
     }
 }

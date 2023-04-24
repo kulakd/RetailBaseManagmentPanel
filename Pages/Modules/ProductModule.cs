@@ -89,7 +89,7 @@ namespace RetailBaseManagmentPanel.Pages.Modules
             {
                 if (MessageBox.Show("Are you sure you want to update this product?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    sqlCommand = new SqlCommand("Update tbproduct SET pname=@pname,pqty=@pqty,pprice=@pprice,pdescription=@pdescription,pcategory=@pcategory WHERE PID LIKE '" + PIDlbl.Text + "'", con);
+                    sqlCommand = new SqlCommand("Update tbproduct SET pname=@pname,pqty=@pqty,pprice=@pprice,pdescription=@pdescription,pcategory=@pcategory WHERE pid LIKE '" + PIDlbl.Text + "'", con);
                     sqlCommand.Parameters.AddWithValue("@pname", ProductNameTxt.Text);
                     sqlCommand.Parameters.AddWithValue("@pqty", Convert.ToInt16(Quantitytxt.Text));
                     sqlCommand.Parameters.AddWithValue("@pprice", Convert.ToInt16(PriceTxt.Text));

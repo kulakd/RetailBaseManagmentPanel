@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RetailBaseManagmentPanel.Pages.Main;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace RetailBaseManagmentPanel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginPage());
+            Application.Run(new Loading());
         }
     }
 }

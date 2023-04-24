@@ -66,7 +66,7 @@ namespace RetailBaseManagmentPanel
             {
                 if (MessageBox.Show("Are you sure you want to update this customer?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    sqlCommand = new SqlCommand("Update tbCustomer SET CName=@CName,CPhone=@CPhone WHERE CId LIKE '" + ClClbl.Text + "'", con);
+                    sqlCommand = new SqlCommand("Update tbCustomer SET CName=@CName,CPhone=@CPhone WHERE cid LIKE '" + ClClbl.Text + "'", con);
                     sqlCommand.Parameters.AddWithValue("@CName", CusNametxt.Text);
                     sqlCommand.Parameters.AddWithValue("@CPhone", CusPhonetxt.Text);
                     con.Open();

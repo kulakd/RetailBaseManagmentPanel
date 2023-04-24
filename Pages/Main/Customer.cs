@@ -66,7 +66,7 @@ namespace RetailBaseManagmentPanel
                 if (MessageBox.Show("Are you sure you want to delete this customer?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     con.Open();
-                    sqlCommand = new SqlCommand("DELETE FROM tbCustomer WHERE CId LIKE  '" + dgvCustomer.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", con);
+                    sqlCommand = new SqlCommand("DELETE FROM tbCustomer WHERE cid LIKE  '" + dgvCustomer.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", con);
                     sqlCommand.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("Record has been deleted");

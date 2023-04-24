@@ -54,8 +54,9 @@ namespace RetailBaseManagmentPanel
                 reader.Read();
                 if (reader.HasRows)
                 {
-                    MessageBox.Show("Welcome" + reader["fullname"].ToString() + "|", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Welcome " + reader["fullname"].ToString() + "|", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Main main = new Main();
+                    this.Hide();
                     main.ShowDialog();
                 }
                 else

@@ -169,13 +169,16 @@
   <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="Column8.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column9.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -187,23 +190,6 @@
   <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Edit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Edit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAdJJREFUeF7tmc8uLEEYR2flSsTFUxBBSLwEDyAWQsSzsPEILDyC+Le38QhEWN9c
-        IbbY4PwSX9LpfNO6ZyyqyneSsynT1KmunqmJXhAEQRAEQRAEqbKIO7iKoxr4LYzgIX5UvMF5LB7FH2M1
-        3nzGZSyWpniz2EVoE28Wtwhd4s1iFmGQeDP7RRgm3sx2ERR/gl5UV58wq4/In4w3rzGLw9JPbPt+rmDS
-        tLnz//GqNtZWHZuTpW38LI7h5ddYW99xAZOkS7zRdREOMEkGiTe0CG0eB/1+/Z3k0KS+e8N7wDn0mMZ/
-        6F1nXuAfTI6IR2/SZsSjR8Sjd50Z8ZgcEY/epM2IR48ZzDZeHKE3abPfCU9oXD/3rjOTPeGJv/iC3sRl
-        0XdebKI3cVl8vOj3BecRi932xiS+ohewix7F3HmxhV6A1D806xQVL87Qi7jHOsXFa/u/oRdS3f5LuId6
-        T/Bea2bxzFdp2v77qEW4q4w1mV28OEcvpqtZbXujaft3Mct4sY1eUBezjRfDbH+dG/TdIbtn3hhk+yv6
-        FHVsnsCsWUcvsq4WyaK1aMXQ9PGnaB2O9JqioqtoC99iNVrvCUVH1xnHDVzDKQ0EQRAEQRAEQZAZvd4n
-        G0F5Fcxpe8YAAAAASUVORK5CYII=
-</value>
-  </data>
   <metadata name="Delete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.exitlbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,13 +47,6 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dgvProduct = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.SearchProducttxt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -66,12 +59,17 @@
             this.TotalTxt = new System.Windows.Forms.TextBox();
             this.pnametxt = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.odatetxt = new System.Windows.Forms.DateTimePicker();
-            this.label13 = new System.Windows.Forms.Label();
             this.Clearbtn = new System.Windows.Forms.Button();
-            this.Updatebtn = new System.Windows.Forms.Button();
             this.Insertbtn = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OrderIDlbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).BeginInit();
@@ -116,6 +114,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.OrderIDlbl);
             this.panel2.Controls.Add(this.cnametxt);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.cidtxt);
@@ -198,14 +197,14 @@
             // 
             this.dgvCustomer.AllowUserToAddRows = false;
             this.dgvCustomer.BackgroundColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Green;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Green;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvCustomer.ColumnHeadersHeight = 29;
             this.dgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -258,14 +257,14 @@
             // 
             this.dgvProduct.AllowUserToAddRows = false;
             this.dgvProduct.BackgroundColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Green;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Green;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvProduct.ColumnHeadersHeight = 29;
             this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -285,61 +284,6 @@
             this.dgvProduct.Size = new System.Drawing.Size(699, 338);
             this.dgvProduct.TabIndex = 5;
             this.dgvProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellClick);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn1.HeaderText = "No";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 58;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Product ID";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 117;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 80;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column3.HeaderText = "Quantity";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 98;
-            // 
-            // Price
-            // 
-            this.Price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Price.HeaderText = "Price";
-            this.Price.MinimumWidth = 6;
-            this.Price.Name = "Price";
-            this.Price.Width = 77;
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.HeaderText = "Description";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            // 
-            // Category
-            // 
-            this.Category.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Category.HeaderText = "Category";
-            this.Category.MinimumWidth = 6;
-            this.Category.Name = "Category";
-            this.Category.Width = 105;
             // 
             // label3
             // 
@@ -451,25 +395,6 @@
             this.label8.TabIndex = 28;
             this.label8.Text = "Product Name:";
             // 
-            // odatetxt
-            // 
-            this.odatetxt.CustomFormat = "dd/MM/yyyy";
-            this.odatetxt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.odatetxt.Location = new System.Drawing.Point(558, 542);
-            this.odatetxt.Name = "odatetxt";
-            this.odatetxt.Size = new System.Drawing.Size(112, 27);
-            this.odatetxt.TabIndex = 30;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(445, 542);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(116, 23);
-            this.label13.TabIndex = 31;
-            this.label13.Text = "Order Date:";
-            // 
             // Clearbtn
             // 
             this.Clearbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -477,27 +402,13 @@
             this.Clearbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Clearbtn.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Clearbtn.ForeColor = System.Drawing.Color.White;
-            this.Clearbtn.Location = new System.Drawing.Point(866, 585);
+            this.Clearbtn.Location = new System.Drawing.Point(735, 585);
             this.Clearbtn.Name = "Clearbtn";
-            this.Clearbtn.Size = new System.Drawing.Size(214, 42);
+            this.Clearbtn.Size = new System.Drawing.Size(345, 42);
             this.Clearbtn.TabIndex = 34;
             this.Clearbtn.Text = "CLEAR";
             this.Clearbtn.UseVisualStyleBackColor = false;
             this.Clearbtn.Click += new System.EventHandler(this.Clearbtn_Click);
-            // 
-            // Updatebtn
-            // 
-            this.Updatebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.Updatebtn.FlatAppearance.BorderSize = 0;
-            this.Updatebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Updatebtn.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Updatebtn.ForeColor = System.Drawing.Color.White;
-            this.Updatebtn.Location = new System.Drawing.Point(649, 585);
-            this.Updatebtn.Name = "Updatebtn";
-            this.Updatebtn.Size = new System.Drawing.Size(211, 42);
-            this.Updatebtn.TabIndex = 33;
-            this.Updatebtn.Text = "UPDATE";
-            this.Updatebtn.UseVisualStyleBackColor = false;
             // 
             // Insertbtn
             // 
@@ -508,7 +419,7 @@
             this.Insertbtn.ForeColor = System.Drawing.Color.White;
             this.Insertbtn.Location = new System.Drawing.Point(424, 585);
             this.Insertbtn.Name = "Insertbtn";
-            this.Insertbtn.Size = new System.Drawing.Size(219, 42);
+            this.Insertbtn.Size = new System.Drawing.Size(305, 42);
             this.Insertbtn.TabIndex = 32;
             this.Insertbtn.Text = "INSERT";
             this.Insertbtn.UseVisualStyleBackColor = false;
@@ -527,6 +438,71 @@
             this.numericUpDown1.TabIndex = 35;
             this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn1.HeaderText = "No";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 58;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Product ID";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 117;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 80;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column3.HeaderText = "Quantity";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 98;
+            // 
+            // Price
+            // 
+            this.Price.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Price.HeaderText = "Price";
+            this.Price.MinimumWidth = 6;
+            this.Price.Name = "Price";
+            this.Price.Width = 77;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.HeaderText = "Description";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
+            // Category
+            // 
+            this.Category.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Category.HeaderText = "Category";
+            this.Category.MinimumWidth = 6;
+            this.Category.Name = "Category";
+            this.Category.Width = 105;
+            // 
+            // OrderIDlbl
+            // 
+            this.OrderIDlbl.AutoSize = true;
+            this.OrderIDlbl.Location = new System.Drawing.Point(106, 523);
+            this.OrderIDlbl.Name = "OrderIDlbl";
+            this.OrderIDlbl.Size = new System.Drawing.Size(60, 19);
+            this.OrderIDlbl.TabIndex = 11;
+            this.OrderIDlbl.Text = "label13";
+            this.OrderIDlbl.Visible = false;
+            // 
             // OrderModules
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -534,10 +510,7 @@
             this.ClientSize = new System.Drawing.Size(1094, 639);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.Clearbtn);
-            this.Controls.Add(this.Updatebtn);
             this.Controls.Add(this.Insertbtn);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.odatetxt);
             this.Controls.Add(this.pnametxt);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.TotalTxt);
@@ -587,6 +560,18 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dgvProduct;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox SearchProducttxt;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Button Clearbtn;
+        public System.Windows.Forms.Button Insertbtn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -594,27 +579,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Category;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox SearchProducttxt;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox cnametxt;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox cidtxt;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox PIDtxt;
-        private System.Windows.Forms.TextBox Pricetxt;
-        private System.Windows.Forms.TextBox TotalTxt;
-        private System.Windows.Forms.TextBox pnametxt;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label13;
-        public System.Windows.Forms.Button Clearbtn;
-        public System.Windows.Forms.Button Updatebtn;
-        public System.Windows.Forms.Button Insertbtn;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        public System.Windows.Forms.DateTimePicker odatetxt;
+        public System.Windows.Forms.Label OrderIDlbl;
+        public System.Windows.Forms.TextBox cnametxt;
+        public System.Windows.Forms.TextBox cidtxt;
+        public System.Windows.Forms.TextBox PIDtxt;
+        public System.Windows.Forms.TextBox Pricetxt;
+        public System.Windows.Forms.TextBox TotalTxt;
+        public System.Windows.Forms.TextBox pnametxt;
+        public System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
