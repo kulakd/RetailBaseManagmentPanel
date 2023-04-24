@@ -13,7 +13,7 @@ namespace RetailBaseManagmentPanel.Pages.Modules
 {
     public partial class ProductModule : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\dawid\Documents\FRMSDB.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=localhost;Initial Catalog=RetailDB;Integrated Security=True;Pooling=False");
         SqlCommand sqlCommand = new SqlCommand();
         SqlDataReader reader;
         public ProductModule()
@@ -25,7 +25,7 @@ namespace RetailBaseManagmentPanel.Pages.Modules
         public void LoadCategory()
         {
             CategoryCombo.Items.Clear();
-            sqlCommand = new SqlCommand("SELECT CategoryName FROM tbCategory",con);
+            sqlCommand = new SqlCommand("SELECT catname FROM tbCategory",con);
             con.Open();
             reader = sqlCommand.ExecuteReader();
             while(reader.Read())

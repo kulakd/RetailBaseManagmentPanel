@@ -13,7 +13,7 @@ namespace RetailBaseManagmentPanel.Pages.Modules
 {
     public partial class CategoryModule : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\dawid\Documents\FRMSDB.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=localhost;Initial Catalog=RetailDB;Integrated Security=True;Pooling=False");
         SqlCommand sqlCommand = new SqlCommand();
         public CategoryModule()
         {
@@ -26,8 +26,8 @@ namespace RetailBaseManagmentPanel.Pages.Modules
             {
                 if (MessageBox.Show("Are you sure you want to save this Category?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    sqlCommand = new SqlCommand("Insert INTO tbCategory(CategoryName)VALUES(@CategoryName)", con);
-                    sqlCommand.Parameters.AddWithValue("@CategoryName", CatNametxt.Text);
+                    sqlCommand = new SqlCommand("Insert INTO tbCategory(catname)VALUES(@catname)", con);
+                    sqlCommand.Parameters.AddWithValue("@catname", CatNametxt.Text);
                     con.Open();
                     sqlCommand.ExecuteNonQuery();
                     con.Close();
@@ -63,8 +63,8 @@ namespace RetailBaseManagmentPanel.Pages.Modules
             {
                 if (MessageBox.Show("Are you sure you want to update this category?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    sqlCommand = new SqlCommand("Update tbCategory SET CategoryName=@CategoryName WHERE CatId LIKE '" + CategoryIdlbl.Text + "'", con);
-                    sqlCommand.Parameters.AddWithValue("@CategoryName", CatNametxt.Text);
+                    sqlCommand = new SqlCommand("Update tbCategory SET catname=@catname WHERE catid LIKE '" + CategoryIdlbl.Text + "'", con);
+                    sqlCommand.Parameters.AddWithValue("@catname", CatNametxt.Text);
                     con.Open();
                     sqlCommand.ExecuteNonQuery();
                     con.Close();

@@ -91,6 +91,7 @@
             this.dgvCategory.EnableHeadersVisualStyles = false;
             this.dgvCategory.Location = new System.Drawing.Point(-9, 0);
             this.dgvCategory.Name = "dgvCategory";
+            this.dgvCategory.RowHeadersVisible = false;
             this.dgvCategory.RowHeadersWidth = 51;
             this.dgvCategory.RowTemplate.Height = 24;
             this.dgvCategory.Size = new System.Drawing.Size(995, 400);
@@ -161,7 +162,7 @@
             // customerButton1
             // 
             this.customerButton1.Image = ((System.Drawing.Image)(resources.GetObject("customerButton1.Image")));
-            this.customerButton1.ImageHover = ((System.Drawing.Image)(resources.GetObject("customerButton1.ImageHover")));
+            this.customerButton1.ImageHover = null;
             this.customerButton1.ImageNormal = null;
             this.customerButton1.Location = new System.Drawing.Point(225, 26);
             this.customerButton1.Name = "customerButton1";

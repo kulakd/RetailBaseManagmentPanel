@@ -56,7 +56,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(400, 56);
+            this.panel1.Size = new System.Drawing.Size(395, 56);
             this.panel1.TabIndex = 0;
             // 
             // exitlbl
@@ -101,7 +101,7 @@
             // 
             // Passwordtxt
             // 
-            this.Passwordtxt.Location = new System.Drawing.Point(150, 287);
+            this.Passwordtxt.Location = new System.Drawing.Point(148, 265);
             this.Passwordtxt.Name = "Passwordtxt";
             this.Passwordtxt.Size = new System.Drawing.Size(213, 22);
             this.Passwordtxt.TabIndex = 2;
@@ -111,7 +111,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(46, 215);
+            this.label1.Location = new System.Drawing.Point(36, 213);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 20);
             this.label1.TabIndex = 3;
@@ -121,7 +121,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(46, 289);
+            this.label2.Location = new System.Drawing.Point(36, 265);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 20);
             this.label2.TabIndex = 4;
@@ -134,7 +134,7 @@
             this.loginbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginbtn.ForeColor = System.Drawing.Color.White;
-            this.loginbtn.Location = new System.Drawing.Point(50, 375);
+            this.loginbtn.Location = new System.Drawing.Point(40, 337);
             this.loginbtn.Name = "loginbtn";
             this.loginbtn.Size = new System.Drawing.Size(311, 39);
             this.loginbtn.TabIndex = 5;
@@ -156,7 +156,7 @@
             // checkboxPassword
             // 
             this.checkboxPassword.AutoSize = true;
-            this.checkboxPassword.Location = new System.Drawing.Point(238, 330);
+            this.checkboxPassword.Location = new System.Drawing.Point(236, 311);
             this.checkboxPassword.Name = "checkboxPassword";
             this.checkboxPassword.Size = new System.Drawing.Size(125, 20);
             this.checkboxPassword.TabIndex = 9;
@@ -169,7 +169,7 @@
             this.clearlbl.AutoSize = true;
             this.clearlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearlbl.ForeColor = System.Drawing.Color.Green;
-            this.clearlbl.Location = new System.Drawing.Point(159, 330);
+            this.clearlbl.Location = new System.Drawing.Point(159, 309);
             this.clearlbl.Name = "clearlbl";
             this.clearlbl.Size = new System.Drawing.Size(49, 20);
             this.clearlbl.TabIndex = 10;
@@ -190,7 +190,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 435);
+            this.ClientSize = new System.Drawing.Size(395, 395);
             this.Controls.Add(this.clearlbl);
             this.Controls.Add(this.checkboxPassword);
             this.Controls.Add(this.label4);

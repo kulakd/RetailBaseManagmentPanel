@@ -14,7 +14,7 @@ namespace RetailBaseManagmentPanel.Pages.Main
 {
     public partial class Category : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\dawid\Documents\FRMSDB.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=localhost;Initial Catalog=RetailDB;Integrated Security=True;Pooling=False");
         SqlCommand sqlCommand = new SqlCommand();
         SqlDataReader reader;
         public Category()
@@ -66,7 +66,7 @@ namespace RetailBaseManagmentPanel.Pages.Main
                 if (MessageBox.Show("Are you sure you want to delete this category?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     con.Open();
-                    sqlCommand = new SqlCommand("DELETE FROM tbCategory WHERE CatId LIKE  '" + dgvCategory.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", con);
+                    sqlCommand = new SqlCommand("DELETE FROM tbCategory WHERE catid LIKE  '" + dgvCategory.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", con);
                     sqlCommand.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("Record has been deleted");

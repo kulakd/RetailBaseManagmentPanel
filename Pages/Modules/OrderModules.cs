@@ -13,7 +13,7 @@ namespace RetailBaseManagmentPanel.Pages.Modules
 {
     public partial class OrderModules : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\dawid\Documents\FRMSDB.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=localhost;Initial Catalog=RetailDB;Integrated Security=True;Pooling=False");
         SqlCommand sqlCommand = new SqlCommand();
         SqlDataReader reader;
         public OrderModules()

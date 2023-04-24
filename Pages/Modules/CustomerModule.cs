@@ -13,7 +13,7 @@ namespace RetailBaseManagmentPanel
 {
     public partial class CustomerModule : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\dawid\Documents\FRMSDB.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=localhost;Initial Catalog=RetailDB;Integrated Security=True;Pooling=False");
         SqlCommand sqlCommand = new SqlCommand();
         public CustomerModule()
         {
@@ -26,9 +26,9 @@ namespace RetailBaseManagmentPanel
             {
                 if (MessageBox.Show("Are you sure you want to save this customer?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    sqlCommand = new SqlCommand("Insert INTO tbCustomer(CName,CPhone)VALUES(@CName,@CPhone)", con);
-                    sqlCommand.Parameters.AddWithValue("@CName", CusNametxt.Text);
-                    sqlCommand.Parameters.AddWithValue("@CPhone", CusPhonetxt.Text);
+                    sqlCommand = new SqlCommand("Insert INTO tbCustomer(cname,cphone)VALUES(@cname,@cphone)", con);
+                    sqlCommand.Parameters.AddWithValue("@cname", CusNametxt.Text);
+                    sqlCommand.Parameters.AddWithValue("@cphone", CusPhonetxt.Text);
                     con.Open();
                     sqlCommand.ExecuteNonQuery();
                     con.Close();
@@ -66,9 +66,9 @@ namespace RetailBaseManagmentPanel
             {
                 if (MessageBox.Show("Are you sure you want to update this customer?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    sqlCommand = new SqlCommand("Update tbCustomer SET CName=@CName,CPhone=@CPhone WHERE cid LIKE '" + ClClbl.Text + "'", con);
-                    sqlCommand.Parameters.AddWithValue("@CName", CusNametxt.Text);
-                    sqlCommand.Parameters.AddWithValue("@CPhone", CusPhonetxt.Text);
+                    sqlCommand = new SqlCommand("Update tbCustomer SET cname=@cname,cphone=@cphone WHERE cid LIKE '" + ClClbl.Text + "'", con);
+                    sqlCommand.Parameters.AddWithValue("@cname", CusNametxt.Text);
+                    sqlCommand.Parameters.AddWithValue("@cphone", CusPhonetxt.Text);
                     con.Open();
                     sqlCommand.ExecuteNonQuery();
                     con.Close();
