@@ -200,5 +200,12 @@
   <ItemGroup>
     <None Include="Properties\logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Tools\GithubImages\gh1.jpg" />
+    <Content Include="Tools\GithubImages\gh2.jpg" />
+    <Content Include="Tools\GithubImages\gh3.jpg" />
+    <Content Include="Tools\GithubImages\gh4.jpg" />
+    <Content Include="Tools\GithubImages\gh5.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
